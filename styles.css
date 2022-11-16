@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(to left,rgb(102, 6, 236),rgb(247, 112, 134));
+
+}
+
+.container {
+    padding: 25px;
+    margin-left: 20%;
+    margin-top: 2%;
+    border-radius: 20px;
+ width: 50vw;
+ height: 80vh;
+ background: linear-gradient(to right bottom,rgba(255, 255, 255, 0.765),rgba(255, 255, 255, 0.1));
+ z-index: 2;
+ position: relative;
+ backdrop-filter: blur(2rem);
+}
+
+.input {
+  display: flex;
+  width: 95%;
+  height: 40px;
+  position: relative;
+}
+
+.input input {
+  width: 90%;
+  height: 100%;
+  margin-top: 30px;
+  margin-left: 40px;
+  padding: 20px;
+  border: 2px solid white;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.271);
+}
+
+.input input:focus {
+    outline-style: none;
+    background-color: #a98cee68;
+}
+
+.input button {
+  height: 122%;
+  width: 8%;
+  margin-left: 6px;
+  margin-top: 26px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.input button.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.input button:hover,
+.pending button:hover {
+  border: 2px solid rgba(130, 111, 235, 0.735);
+}
+
+.container .todoList {
+  height: fit-content;
+  padding: 20px;
+  max-height: 60vh;
+  margin: 50px 20px;
+  overflow-y: auto;
+  line-break: strict;
+  word-break: break-all;
+}
+
+.todoList li {
+  list-style: none;
+  height: auto;
+  max-height: max-content;
+  line-height: 40px;
+  background:linear-gradient(to right bottom , rgba(255, 255, 255, 0.84),rgba(255, 255, 255, 0.206));
+  padding: 6px 29px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px ;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(59, 59, 59, 0.4);
+  color: rgb(66, 2, 74);
+  font-weight: 500;
+  font-size: large;
+}
+
+.todoList li span {
+  position: absolute;
+  margin-left: 10px;
+  top: 0px;
+  right: 10px;
+  color: rgb(245, 0, 188);
+  padding:  3px;
+}
+
+.todoList li .Done {
+  top: 0;
+  right: 35px;
+  color: rgb(7, 168, 37);
+}
+
+.todoList li:hover span {
+  cursor: pointer;
+}
+strike {
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgb(59, 8, 104);
+}
+
+h3 {
+    width: 500px;
+    text-align: center;
+    font-size: 350%;
+    background: linear-gradient(to right bottom,rgba(255, 253, 253, 0.615),rgba(255, 255, 255, 0.267) );
+  padding: 4px 60px;
+  margin-left: 32%;
+  margin-top: 30px;  
+  border-radius: 20px;
+  color: rgba(255, 255, 255, 0.035);
+}
+h3 span{
+    background:linear-gradient(to left,rgb(102, 6, 236),rgb(247, 112, 134));
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.circle1,.circle2{
+    background: linear-gradient(to right bottom,rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.1));
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    position: absolute;
+    
+}
+.circle1{
+    top: 15%;
+    right: 18%;
+}
+.circle2{
+    bottom: 5%;
+    left: 10%;
+}
+footer{
+    color: white;
+}
